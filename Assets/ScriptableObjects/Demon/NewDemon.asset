@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec74b5c9df3430248a870577a1091ea9, type: 3}
+  m_Name: NewDemon
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  race: 0
+  demonName: 
+  stats:
+  - baseStat: 0
+    value: 0
+  - baseStat: 1
+    value: 0
+  - baseStat: 2
+    value: 0
+  - baseStat: 3
+    value: 0
+  - baseStat: 4
+    value: 0
+  - baseStat: 5
+    value: 0
+  - baseStat: 6
+    value: 0
+  - baseStat: 7
+    value: 0
+  - baseStat: 8
+    value: 0
+  - baseStat: 9
+    value: 0
+  - baseStat: 10
+    value: 0
+  - baseStat: 11
+    value: 0
+  - baseStat: 12
+    value: 0
+  resistances:
+  - element: 0
+    resistType: 0
+  - element: 1
+    resistType: 0
+  - element: 2
+    resistType: 0
+  - element: 3
+    resistType: 0
+  - element: 4
+    resistType: 0
+  - element: 5
+    resistType: 0
+  - element: 6
+    resistType: 0
+  - element: 7
+    resistType: 0
+  - element: 8
+    resistType: 0
+  affinities:
+  - element: 0
+    affinityLevel: 0
+  - element: 1
+    affinityLevel: 0
+  - element: 2
+    affinityLevel: 0
+  - element: 3
+    affinityLevel: 0
+  - element: 4
+    affinityLevel: 0
+  - element: 5
+    affinityLevel: 0
+  - element: 6
+    affinityLevel: 0
+  - element: 7
+    affinityLevel: 0
+  - element: 8
+    affinityLevel: 0

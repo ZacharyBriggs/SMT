@@ -26,7 +26,10 @@ public enum Element
     Force,
     Light,
     Dark,
-    Almighty
+    Almighty,
+    Ailment,
+    Heal,
+    Support
 }
 
 public enum ResistanceType
@@ -39,24 +42,35 @@ public enum ResistanceType
     Reflect
 }
 
+public enum Alignment
+{
+    Law,
+    Neutral,
+    Chaos,
+}
+
+public enum SubAlignment
+{
+    Light,
+    Neutral,
+    Dark,
+}
+
 [CreateAssetMenu(fileName = "NewDemon", menuName = "ScriptableObjects/Create New Demon")]
 public class Demon : ScriptableObject
 {
     public Sprite sprite;
     public Race race;
     public string demonName;
-    public List<Stat> stats = new List<Stat>();
+    public Alignment alignment;
+    public SubAlignment subAlignment;
+    public Stats stats = new Stats();
     public List<Resistance> resistances = new List<Resistance>();
     public List<Affinity> affinities = new List<Affinity>();
 
     public Demon()
     {
-        stats = new List<Stat>();
-        foreach(BaseStats bs in Enum.GetValues(typeof(BaseStats)))
-        {
-            stats.Add(new Stat(bs, 0));
-        }
-
+        stats.Initialize();
         foreach(Element ele in Enum.GetValues(typeof(Element)))
         {
             resistances.Add(new Resistance(ele, ResistanceType.None));
